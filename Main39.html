@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu Legendary Coder</title>
+    <style>
+        body {
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body onclick="showCoords(event)">
+    <h2>Click Anywhere to See X and Y Coordinates.</h2>
+    <p id="output"></p>
+    <script>
+        function showCoords(event) {
+            document.getElementById("output").innerHTML =
+                "X : " + event.clientX + " Y : " + event.clientY;
+        }
+    </script>
+</body>
+
+</html>
